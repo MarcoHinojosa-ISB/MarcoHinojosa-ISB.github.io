@@ -53,17 +53,25 @@ body{
 	padding-bottom: 10px;
 }
 
+
 #footer button{
-	width: 50px;
-	height: 50px;
-	font-size: 25px;
 	border-style: solid;
-	border-radius: 50%;
+	
 	border-color: #ffffff;
 	color: #ffffff;
 	background-color: #555555;
 }
-footer button:hover{
+#footer .social{
+	width: 50px;
+	height: 50px;
+	font-size: 25px;
+	border-radius: 50%;
+}
+#footer .resume{
+	font-size: 25px;
+	border-radius: 12px;
+}
+#footer button:hover{
 	color: #555555;
 	background-color: #ffffff;
 }
