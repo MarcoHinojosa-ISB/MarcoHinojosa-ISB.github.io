@@ -4,7 +4,8 @@ body{
 
 /* nav */
 #navigation{
-	position: fixed;width: 100%;
+	position: fixed;
+	width: 100%;
 	z-index: 1;
 	background-color: black;
 }
@@ -15,10 +16,10 @@ body{
 	display: inline-block;
 	color: white;
 	text-align: center;
-	font-size: 24px;
-	width: 200px;
+	font-size: 15px;
+	width: 120px;
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 }
 
 /* nav links */
@@ -34,6 +35,7 @@ body{
 #top{
 	background-color: #ffffff;
 	border-radius: 10px 10px 0px 0px;
+	margin-top: 50px;
 	padding: 15px;
 }
 #skillset{
@@ -45,13 +47,13 @@ body{
 	padding: 15px;
 }
 
-footer{
+#footer{
 	background-color: #555555;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
-footer button{
+#footer button{
 	width: 50px;
 	height: 50px;
 	font-size: 25px;
@@ -69,6 +71,7 @@ footer button:hover{
 #portfolio img{
 	border: 1px solid black;
 	border-radius: 10px;
+	margin: 0 auto;
 }
 #portfolio a{
 	display: inline-block;
@@ -80,7 +83,7 @@ footer button:hover{
 }
 #portfolio a:hover{
 	color: #aaaaaa;
-};
+}
 
 @media screen and (max-width: 991px){
 	#skillset p{
