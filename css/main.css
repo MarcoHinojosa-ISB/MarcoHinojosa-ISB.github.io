@@ -2,7 +2,7 @@ body{
 	background-color: #99ccff;
 }
 
-/* nav */
+/* navigation */
 #navigation{
 	position: fixed;
 	width: 100%;
@@ -17,7 +17,7 @@ body{
 	color: white;
 	text-align: center;
 	font-size: 15px;
-	width: 120px;
+	width: 100px;
 	padding-top: 10px;
 	padding-bottom: 5px;
 }
@@ -53,29 +53,7 @@ body{
 	padding-bottom: 10px;
 }
 
-
-#footer button{
-	border-style: solid;
-	
-	border-color: #ffffff;
-	color: #ffffff;
-	background-color: #555555;
-}
-#footer .social{
-	width: 50px;
-	height: 50px;
-	font-size: 25px;
-	border-radius: 50%;
-}
-#footer .resume{
-	font-size: 25px;
-	border-radius: 12px;
-}
-#footer button:hover{
-	color: #555555;
-	background-color: #ffffff;
-}
-
+/* portfolio */
 #portfolio img{
 	border: 1px solid black;
 	border-radius: 10px;
@@ -85,49 +63,78 @@ body{
 	display: inline-block;
 	text-decoration: none;
 	background-color: #33bb22;
-	color: #dddddd;
+	color: #ffffff;
 	padding: 5px;
 	border-radius: 5px;
 }
 #portfolio a:hover{
-	color: #aaaaaa;
+	color: #cccccc;
 }
 
+/* footer links*/
+#footer button{
+	border: 1px solid #cccccc;
+	color: #cccccc;
+	background-color: #555555;
+}
+#footer button:hover{
+	color: #555555;
+	background-color: #cccccc;
+}
+
+#footer .social{
+	width: 40px;
+	height: 40px;
+	font-size: 25px;
+	border-radius: 50%;
+}
+#footer .resume{
+	font-size: 25px;
+	border-radius: 12px;
+}
+
+/* mobile screen */
 @media screen and (max-width: 991px){
 	#skillset p{
 		text-align: center;
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
-	.level-alt{
+	.skill-alt{
 		font-weight: bold;
 	}
 }
 
-
+/* laptop/desktop screen */
 @media screen and (min-width: 992px){
 	#skillset p{
 		text-align: right;
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
-	.level-alt{
+	.skill-alt{
 		display: none;
 	}
 
-	.level{
+	.skill{
 		width: 100%;
 		height: 20px;
 		background-color: white;
+		border-radius: 10px;
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
-	#s-1, #s-2, #s-3, #s-4, #s-5, #s-6, #s-7, #s-8, #s-9, #s-10, #s-11, #s-12{
-		background-color: #00dd00;
+	.skill div{
 		height: 20px;
+		background-color: #00dd00;
+		border-radius: 10px;
+		border: 3px solid white;
 	}
+
+
+	/* skill proficiencies */
 	#s-1{
-		width: 85%;	
+		width: 90%;
 	}
 	#s-2{
 		width: 85%;
@@ -148,10 +155,10 @@ body{
 		width: 75%;
 	}
 	#s-8{
-		width: 35%;
+		width: 45%;
 	}
 	#s-9{
-		width: 50%;
+		width: 40%;
 	}
 	#s-10{
 		width: 65%;
