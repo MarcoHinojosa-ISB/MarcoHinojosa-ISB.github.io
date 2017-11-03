@@ -8,6 +8,7 @@ body{
 	width: 100%;
 	z-index: 1;
 	background-color: black;
+	box-shadow: 0px 0px 25px 4px #000000;
 }
 #navigation > ul{
 	text-align: right;
@@ -19,7 +20,6 @@ body{
 	font-size: 15px;
 	width: 100px;
 	padding-top: 10px;
-	padding-bottom: 5px;
 }
 
 /* nav links */
@@ -34,8 +34,8 @@ body{
 /* page content */
 #top{
 	background-color: #ffffff;
-	border-radius: 10px 10px 0px 0px;
-	margin-top: 50px;
+	border-radius: 0px 0px 0px 0px;
+	margin-top: 40px;
 	padding: 15px;
 }
 #skillset{
@@ -46,7 +46,6 @@ body{
 	background-color: #ffffff;
 	padding: 15px;
 }
-
 #footer{
 	background-color: #555555;
 	padding-top: 10px;
@@ -73,13 +72,12 @@ body{
 
 /* footer links*/
 #footer button{
-	border: 1px solid #cccccc;
-	color: #cccccc;
+	border: 1px solid #555555;
+	color: #bbbbbb;
 	background-color: #555555;
 }
 #footer button:hover{
-	color: #555555;
-	background-color: #cccccc;
+	color: #ffffff;
 }
 
 #footer .social{
@@ -89,14 +87,14 @@ body{
 	border-radius: 50%;
 }
 #footer .resume{
-	font-size: 25px;
+	font-size: 15px;
 	border-radius: 12px;
 }
 
-/* mobile screen */
+/* =================mobile screen================= */
 @media screen and (max-width: 991px){
 	#skillset p{
-		text-align: center;
+		margin-left: 40%;
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
@@ -105,7 +103,7 @@ body{
 	}
 }
 
-/* laptop/desktop screen */
+/* ================laptop/desktop screen============== */
 @media screen and (min-width: 992px){
 	#skillset p{
 		text-align: right;
@@ -119,16 +117,16 @@ body{
 	.skill{
 		width: 100%;
 		height: 20px;
-		background-color: white;
+		background-color: #f6f6f6;
 		border-radius: 10px;
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
 	.skill div{
 		height: 20px;
-		background-color: #00dd00;
+		background-color: #55dd55;
 		border-radius: 10px;
-		border: 3px solid white;
+		border: 3px solid #f6f6f6;
 	}
 
 
