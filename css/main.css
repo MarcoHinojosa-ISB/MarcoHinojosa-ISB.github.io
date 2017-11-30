@@ -6,28 +6,31 @@ body{
 #navigation{
 	position: fixed;
 	width: 100%;
+	height: 40px;
 	z-index: 1;
 	background-color: black;
-	box-shadow: 0px 0px 25px 4px #000000;
+	box-shadow: 0px 0px 5px 2px #777777;
 }
 #navigation > ul{
 	text-align: right;
+	height: 100%;
 }
 #navigation > ul li{
 	display: inline-block;
-	color: white;
+	color: #dddddd;
 	text-align: center;
 	font-size: 15px;
-	width: 100px;
-	padding-top: 10px;
+	width: 70px;
+	height: 100%;
+	padding-top: 6px;
 }
 
 /* nav links */
-#navigation > ul li a{
+#navigation > ul a{
 	text-decoration: none;
 	color: #dddddd;
 }
-#navigation > ul li a:hover{
+#navigation > ul a:hover li{
 	color: #aaaaaa;
 }
 
@@ -46,66 +49,81 @@ body{
 	background-color: #ffffff;
 	padding: 15px;
 }
-#footer{
+footer{
 	background-color: #555555;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
+/* Top */
+#top > div{
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
 /* skillset */
 #skillset p{
 	text-align: right;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .skill{
 	width: 100%;
-	height: 20px;
+	height: 25px;
 	background-color: #f6f6f6;
 	border-radius: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 15px;
 }
 .skill div{
-	height: 20px;
+	height: 100%;
 	background-color: #55dd55;
-	border-radius: 10px;
 	border: 3px solid #f6f6f6;
+	border-radius: 10px;
+
+	color: #ffffff;
+	text-align: right;
+	padding-right: 5px;
 }
 
-#s-1{
+#htmlcss{
 	width: 90%;
 }
-#s-2{
-	width: 85%;
+#javascript{
+	width: 90%;
 }
-#s-3{
-	width: 55%;
+#bootstrap{
+	width: 80%;
 }
-#s-4{
-	width: 85%;
+#sass{
+	width: 60%;
 }
-#s-5{
+#jquery{
+	width: 80%;
+}
+#angularjs{
+	width: 80%;
+}
+#reactjs{
+	width: 50%;
+}
+#node-express{
 	width: 75%;
 }
-#s-6{
-	width: 75%;
+#python-django{
+	width: 20%;
 }
-#s-7{
-	width: 75%;
-}
-#s-8{
-	width: 45%;
-}
-#s-9{
+#php{
 	width: 40%;
 }
-#s-10{
+#postgres{
 	width: 65%;
 }
-#s-11{
-	width: 55%;
+#mongodb{
+	width: 60%;
+}
+#mysql{
+	width: 50%;
 }
 
 /* portfolio */
@@ -127,22 +145,22 @@ body{
 }
 
 /* footer links*/
-#footer button{
+footer button{
 	border: 1px solid #555555;
 	color: #bbbbbb;
 	background-color: #555555;
 }
-#footer button:hover{
+footer button:hover{
 	color: #ffffff;
 }
 
-#footer .social{
+footer .social{
 	width: 40px;
 	height: 40px;
 	font-size: 25px;
 	border-radius: 50%;
 }
-#footer .resume{
+footer .resume{
 	font-size: 15px;
 	border-radius: 12px;
 }
