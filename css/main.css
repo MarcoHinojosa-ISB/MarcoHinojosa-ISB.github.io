@@ -132,6 +132,10 @@ footer{
 	border-radius: 10px;
 	margin: 0 auto;
 }
+#portfolio p{
+	text-align: left;
+	font-size: 15px;
+}
 #portfolio a{
 	display: inline-block;
 	text-decoration: none;
