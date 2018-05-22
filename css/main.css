@@ -5,6 +5,8 @@ body{
 /* navigation */
 #navigation{
 	position: fixed;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 40px;
 	z-index: 1;
@@ -21,38 +23,112 @@ body{
 	text-align: center;
 	font-size: 15px;
 	width: 70px;
-	height: 100%;
-	padding-top: 6px;
 }
+#navigation > ul li:hover{
+	background-color: #333333;
+	cursor: pointer;
+}
+
 
 /* nav links */
 #navigation > ul a{
+	display: block;
 	text-decoration: none;
 	color: #dddddd;
-}
-#navigation > ul a:hover li{
-	color: #aaaaaa;
+	line-height: 40px;
 }
 
 /* page content */
-#top{
-	background-color: #ffffff;
-	border-radius: 0px 0px 0px 0px;
+#content{
 	margin-top: 40px;
-	padding: 15px;
 }
-#skillset{
-	background-color: #dddddd;
-	padding: 15px;
+#content-main{
+	width: 70%;
+	float: left;
 }
-#portfolio{
+#content-other{
+	width: 30%;
+	float: left;
+}
+@media only screen and (max-width: 767px){
+	#content-main{
+		width: 100%;
+	}
+	#content-other{
+		display: none;
+	}
+}
+
+
+/* content-other */
+#education, #accomplishments, #activities{
 	background-color: #ffffff;
-	padding: 15px;
+	margin: 20px 20px 20px 0px;
+	padding: 10px;
+	border-radius: 10px;
 }
-footer{
-	background-color: #555555;
-	padding-top: 10px;
-	padding-bottom: 10px;
+
+/* education */
+#education h3{
+	padding: 5px;
+}
+#education ul{
+	list-style-type: none;
+	padding-left: 0px;
+}
+#education ul li{
+	padding: 5px;
+}
+#education ul li + li{
+	border-top: 1px solid #777777;
+}
+#education .school{
+	font-size: 12px;
+	font-weight: bold;
+}
+#education .school ~ div{
+	font-size: 10px;
+}
+
+/* accomlishments */
+#accomplishments h3{
+	padding: 5px;
+}
+#accomplishments ul{
+	padding-left: 0px;
+	list-style-type: none;
+	font-size: 12px;
+}
+#accomplishments ul li{
+	padding: 5px;
+}
+#accomplishments ul li + li{
+	border-top: 1px solid #777777;
+}
+
+/* activities */
+#activities h3{
+	padding: 5px;
+}
+#activities ul{
+	padding-left: 0px;
+	list-style-type: none;
+	font-size: 10px;
+}
+#activities ul li{
+	padding: 5px;
+}
+#activities ul li + li{
+	border-top: 1px solid #777777;
+}
+
+
+/* content-main */
+#top, #skillset, #portfolio{
+	background-color: #ffffff;
+	margin: 20px;
+	padding: 15px;
+	border-radius: 10px;
 }
 
 /* Top */
@@ -71,14 +147,14 @@ footer{
 .skill{
 	width: 100%;
 	height: 25px;
-	background-color: #f6f6f6;
+	background-color: #eeeeee;
 	border-radius: 10px;
 	margin-top: 15px;
 }
 .skill div{
 	height: 100%;
 	background-color: #55dd55;
-	border: 3px solid #f6f6f6;
+	border: 3px solid #dddddd;
 	border-radius: 10px;
 
 	color: #ffffff;
@@ -96,25 +172,22 @@ footer{
 	width: 80%;
 }
 #sass{
-	width: 60%;
+	width: 65%;
 }
 #jquery{
-	width: 80%;
-}
-#angularjs{
-	width: 80%;
-}
-#reactjs{
-	width: 50%;
-}
-#node-express{
 	width: 75%;
 }
-#python-django{
-	width: 20%;
+#angularjs{
+	width: 70%;
+}
+#reactjs{
+	width: 75%;
+}
+#node-express{
+	width: 70%;
 }
 #php-laravel{
-	width: 40%;
+	width: 20%;
 }
 #postgres{
 	width: 65%;
@@ -123,7 +196,7 @@ footer{
 	width: 60%;
 }
 #mysql{
-	width: 50%;
+	width: 30%;
 }
 
 /* portfolio */
@@ -148,7 +221,12 @@ footer{
 	color: #cccccc;
 }
 
-/* footer links*/
+/* footer */
+footer{
+	background-color: #555555;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 footer button{
 	border: 1px solid #555555;
 	color: #bbbbbb;
