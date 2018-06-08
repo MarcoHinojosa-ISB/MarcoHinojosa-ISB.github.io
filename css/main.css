@@ -146,13 +146,25 @@ body{
 #portfolio a{
 	display: inline-block;
 	text-decoration: none;
+	background-color: #13ab02;
+	color: #ffffff;
+	padding: 4px;
+	border: 2px solid #13ab02;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+#portfolio a:hover{
+	background-color: #ffffff;
+	color: #13ab02;
+
+}
+#portfolio span{
+	display: inline-block;
+	text-decoration: none;
 	background-color: #33bb22;
 	color: #ffffff;
 	padding: 5px;
 	border-radius: 5px;
-}
-#portfolio a:hover{
-	color: #cccccc;
 }
 
 
