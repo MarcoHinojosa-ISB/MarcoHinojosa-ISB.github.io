@@ -22,66 +22,84 @@
 						<img class="img-circle img-responsive center-block" src="./images/avatar.png" width="270" height="270"/>
 
 						<div class="col-xs-12">
-				    	<div>&emsp;&emsp;Hi, my name is Marco and I am a Software Developer currently skilled in front-end development and some back-end.
+				    	<div>&emsp;&emsp;Hi, my name is Marco and I am a Web Applications Developer currently skilleded in front-end development and some back-end.
 								I enjoy building web applications and learning new languages, frameworks, and libraries which I can then apply to future projects.
 								It's a good hobby for me that I wish to make into a career in the future.
 							</div>
 				    </div>
 					</div>
 
-					<div class="row" id="skillset">
+					<div id="tabs">
+						<button class="tab-links active" onClick="showContent(event,'skillset')">Skills</button>
+						<button class="tab-links" onClick="showContent(event,'work-history')">Work History</button>
+						<button class="tab-links" onClick="showContent(event,'projects')">Hobby Projects</button>
+					</div>
+					<div id="skillset" class="row tab-content">
 						<h2 class="text-center">Skillset proficiencies</h2>
 
-						<h3 class="text-center">Frontend Tech</h3>
+						<h3 class="text-center">Frontend</h3>
 						<div class="row">
-					    <div class="col-md-3 col-sm-3 col-xs-4">
-			      		<div class="skill-text">HTML/CSS</div>
-								<div class="skill-text">Javascript</div>
-								<div class="skill-text">Bootstrap</div>
-								<div class="skill-text">SASS</div>
-			        	<div class="skill-text">jQuery</div>
-			        	<div class="skill-text">AngularJS</div>
-			        	<div class="skill-text">ReactJS</div>
-								<div class="skill-text">VueJS</div>
+					    <div class="col-xs-12">
+			      		<div class="skill-label">HTML/CSS</div>
+								<div class="skill"><div id="htmlcss"></div></div>
+								<div class="skill-label">Javascript</div>
+								<div class="skill"><div id="javascript"></div></div>
+								<div class="skill-label">Bootstrap</div>
+								<div class="skill"><div id="bootstrap"></div></div>
+								<div class="skill-label">SASS</div>
+								<div class="skill"><div id="sass"></div></div>
+			        	<div class="skill-label">AngularJS</div>
+			        	<div class="skill"><div id="angularjs"></div></div>
+			        	<div class="skill-label">ReactJS</div>
+			        	<div class="skill"><div id="reactjs"></div></div>
+								<div class="skill-label">VueJS</div>
+								<div class="skill"><div id="vuejs"></div></div>
 					    </div>
-				    	<div class="col-md-8 col-sm-8 col-xs-8">
-			      		<div class="skill"><div id="htmlcss">85%</div></div>
-								<div class="skill"><div id="javascript">85%</div></div>
-								<div class="skill"><div id="bootstrap">70%</div></div>
-								<div class="skill"><div id="sass">75%</div></div>
-			        	<div class="skill"><div id="jquery">70%</div></div>
-			        	<div class="skill"><div id="angularjs">60%</div></div>
-			        	<div class="skill"><div id="reactjs">75%</div></div>
-								<div class="skill"><div id="vuejs">55%</div></div>
-				    	</div>
 				    </div>
-			    	<h3 class="text-center">Backend Tech</h3>
+			    	<h3 class="text-center">Backend</h3>
 			    	<div class="row">
-				    	<div class="col-md-3 col-sm-3 col-xs-4">
-			    			<div class="skill-text">Node/Express</div>
-			        	<div class="skill-text">PHP/Laravel</div>
-				    	</div>
-				    	<div class="col-xs-8">
-			    			<div class="skill"><div id="node-express">70%</div></div>
-			        	<div class="skill"><div id="php-laravel">10%</div></div>
+				    	<div class="col-xs-12">
+			    			<div class="skill-label">Node/Express</div>
+				    		<div class="skill"><div id="node-express"></div></div>
+			        	<div class="skill-label">PHP/Laravel</div>
+				        <div class="skill"><div id="php-laravel"></div></div>
 				    	</div>
 			    	</div>
 						<h3 class="text-center">Databases</h3>
 			    	<div class="row">
-				    	<div class="col-md-3 col-sm-3 col-xs-4">
-								<div class="skill-text">PostgreSQL</div>
-								<div class="skill-text">MongoDB</div>
-								<div class="skill-text">MySql</div>
-				    	</div>
-				    	<div class="col-xs-8">
-								<div class="skill"><div id="postgres">55%</div></div>
-								<div class="skill"><div id="mongodb">45%</div></div>
-								<div class="skill"><div id="mysql">30%</div></div>
+				    	<div class="col-xs-12">
+								<div class="skill-label">PostgreSQL</div>
+								<div class="skill"><div id="postgres"></div></div>
+								<div class="skill-label">MongoDB</div>
+								<div class="skill"><div id="mongodb"></div></div>
+								<div class="skill-label">MySql</div>
+								<div class="skill"><div id="mysql"></div></div>
 				    	</div>
 			    	</div>
 					</div>
 
-					<div class="row" id="projects">
+					<div id="work-history" class="row tab-content">
+						<div>
+							<h4><b>Full-Stack Developer</b></h4>
+							<span>Aug 2016 - Mar 2017</span>
+							<h5>Perficientur Sense2Action, McAllen, TX</h5>
+							<ul>
+								<li>Developed websites and web-based applications for various clients and businesses in a scrum-based environment.</li>
+								<li>Developed Android applications almost entirely in Javascript using frameworks such as Ionic and Angular 1.x.</li>
+								<li>Helped design wireframes, plan the application logic, and create user stories for each project that the team took on.</li>
+							</ul>
+						</div>
+						<div>
+							<h4><b>Systems Analyst Office Assistant</b></h4>
+							<span>Jun 2014 - Aug 2015</span>
+							<h5>University of Texas Rio Grande Valley, Edinburg, TX</h5>
+							<ul>
+								<li>Assisted a Systems Analyst with clerical duties such as unlocking the labs for the students and aiding engineering professors with technical issues</li>
+								<li>Transported hardware (and occasionally software) supplies across campus and helped install drivers and updates on current desktop computers.</li>
+							</ul>
+						</div>
+					</div>
+					<div id="projects" class="row tab-content">
 						<h1 class="text-center">Personal Projects</h1>
 						<div class="col-md-4 text-center">
 							<h4>Dungeon Crawler</h4>
@@ -211,10 +229,12 @@
 		<footer class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12 text-center">
-					<a href="https://www.linkedin.com/in/marco-hinojosa-60a37891/" target="_blank"><button class="social"><i class="fa fa-linkedin"></i></button></a>
-					<a href="https://github.com/islaybears" target="_blank"><button class="social"><i class="fa fa-github"></i></button></a>
+					<a href="https://www.linkedin.com/in/marco-hinojosa-60a37891/" target="_blank" class="social"><i class="fa fa-linkedin"></i></a>
+					<a href="https://github.com/islaybears" target="_blank" class="social"><i class="fa fa-github"></i></a>
+					<a href="./MarcoHinojosa.pdf" class="resume" download>Resume</a>
 				</div>
 			</div>
 		</footer>
+		<script src="./js/main.js"></script>
 	</body>
 </html>
