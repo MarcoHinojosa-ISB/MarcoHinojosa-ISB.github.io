@@ -185,6 +185,9 @@ body{
 #work-history h4{
 	margin-bottom: 0px;
 }
+#work-history > div + div{
+	margin-top: 30px;
+}
 
 /* projects */
 #projects{
