@@ -19,32 +19,8 @@ body{
 }
 #header h1{
 	margin: 0px;
+	font-size: 28px;
 	color: #bbbbbb;
-}
-
-@media only screen and (min-width: 768px){
-	#header h1::before{
-		content: attr(data-header);
-		position: absolute;
-		left: 15px;
-		clip: rect(25px, 9999px, 29px, 0);
-		color: #333333;
-	}
-	#header h1::after{
-		content: attr(data-header);
-		position: absolute;
-		left: 14px;
-		clip: rect(25px, 9999px, 29px, 0);
-		color: #bbbbbb;
-		animation: header1 3s infinite linear;
-	}
-}
-
-
-@media only screen and (max-width: 767px){
-	#header h1{
-		font-size: 28px;
-	}
 }
 
 /* page content */
@@ -105,76 +81,21 @@ body{
 	margin-top: 0px;
 	padding-bottom: 25px;
 }
-.skill-label{
-	height: 25px;
-	line-height: 25px;
-	margin-top: 5px;
+#skillset > div {
+	text-align: center;
+}
+#skillset ul{
+	float: left;
+	margin-bottom: 0px;
+}
+.skill-list{
+	display: inline-block;
+	margin: 0 auto;
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 .skill{
-	width: 100%;
-	height: 2px;
-	background-color: #eeeeee;
-	margin-top: 5px;
-}
-.skill div{
-	height: 100%;
-	background-color: #30aeef;
-	color: #ffffff;
-	text-align: right;
-	font-size: 12px;
-	line-height: 25px;
-	padding-right: 4px;
-}
-.skill div::after{
-	content: "";
-	background-color: #0f82af;
-	position: absolute;
-	width: 8px;
-	height: 8px;
-	margin-left: -3px;
-	margin-top: -3px;
-	border-radius: 50%;
-	box-shadow: 0px 0px 9px 2px #0f82af;
-}
-
-#htmlcss{
-	width: 85%;
-}
-#javascript{
-	width: 85%;
-}
-#bootstrap{
-	width: 70%;
-}
-#sass{
-	width: 75%;
-}
-#jquery{
-	width: 70%;
-}
-#angularjs{
-	width: 60%;
-}
-#reactjs{
-	width: 75%;
-}
-#vuejs{
-	width: 55%;
-}
-#node-express{
-	width: 70%;
-}
-#php-laravel{
-	width: 10%;
-}
-#postgres{
-	width: 55%;
-}
-#mongodb{
-	width: 45%;
-}
-#mysql{
-	width: 30%;
+	text-align: left;
 }
 
 /* work-history */
