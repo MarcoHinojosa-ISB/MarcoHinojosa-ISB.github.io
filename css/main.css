@@ -130,6 +130,9 @@ body{
 	border: 1px solid black;
 	margin: 0 auto;
 }
+#projects img.placeholder{
+	border: none;
+}
 #projects p{
 	text-align: left;
 	font-size: 15px;
